@@ -1,0 +1,5 @@
+{
+  "appId": "com.easypay.app",
+  "appName": "EasyPay",
+  "webDir": "frontend/dist"
+}

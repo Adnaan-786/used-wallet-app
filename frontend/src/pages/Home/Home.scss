@@ -1,0 +1,59 @@
+@import '../../Helper/helper.scss';
+
+.home {
+  display: flex;
+  .homeContainer {
+    flex: 6;
+    .widgets,
+    .charts {
+      display: flex;
+      padding: 1.25rem;
+      gap: 1.25rem;
+    }
+    .action-buttons {
+      display: flex;
+      padding: 0 1.25rem;
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+
+      .action-btn {
+        flex: 1;
+        padding: 20px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: transform 0.2s;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+        &:hover {
+          transform: translateY(-2px);
+        }
+
+        &.topup {
+          background-color: #2e7d32; // Green
+        }
+        &.withdraw {
+          background-color: #d32f2f; // Red
+        }
+        &.sell {
+          background-color: #1976d2; // Blue
+        }
+      }
+    }
+    .charts {
+      padding: 0.313rem 1.25rem;
+    }
+    .listContainer {
+      @include Shadow();
+      margin: 1.25rem;
+      .listTitle {
+        font-weight: 500;
+        color: gray;
+        margin-bottom: 0.938rem;
+      }
+    }
+  }
+}
